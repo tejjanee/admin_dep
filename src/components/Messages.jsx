@@ -11,7 +11,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "https://dep-back-s4j5.onrender.com/api/v1/message/getall",
+          "https://back-dep.onrender.com/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);
