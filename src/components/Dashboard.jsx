@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://dep-back-s4j5.onrender.com/api/v1/appointment/getall",
+          "https://back-dep.onrender.com/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setNoAppointments(data.appointments.length)
@@ -29,7 +29,7 @@ const Dashboard = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "https://dep-back-s4j5.onrender.com/api/v1/user/doctors",
+          "https://back-dep.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         );
        
@@ -44,7 +44,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `https://dep-back-s4j5.onrender.com/api/v1/appointment/update/${appointmentId}`,
+        `https://back-dep.onrender.com/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );
