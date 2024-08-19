@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://dep-back-s4j5.onrender.com/api/v1/user/admin/logout", {
+      .get("https://back-dep.onrender.com/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {
