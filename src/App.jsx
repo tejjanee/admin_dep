@@ -21,7 +21,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://dep-back-s4j5.onrender.com/api/v1/user/admin/me",
+          "https://back-dep.onrender.com/api/v1/user/admin/me",
           {
             withCredentials: true,
           }
